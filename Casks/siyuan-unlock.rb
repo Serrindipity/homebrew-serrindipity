@@ -14,7 +14,7 @@ cask "siyuan-unlock" do
   app "Siyuan.app"
 
   postflight do
-    system_command "usr/bin/xattr",
+    system_command "/usr/bin/xattr",
                   args: ["-c", "#{appdir}/SiYuan.app/"],
                   sudo: false
   end

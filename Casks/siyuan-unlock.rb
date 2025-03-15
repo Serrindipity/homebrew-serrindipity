@@ -13,6 +13,12 @@ cask "siyuan-unlock" do
 
   app "Siyuan.app"
 
+  postflight do
+    system_command "usr/bin/xattr",
+                  args: ["-c", "#{appdir}/SiYuan.app/"],
+                  sudo: false
+  end
+
   zap trash: [
     "~/siyuan",
     "~/Library/Application Support/SiYuan-Electron",

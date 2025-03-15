@@ -14,6 +14,7 @@ cask "siyuan-unlock" do
   app "Siyuan.app"
 
   zap trash: [
+    "~/siyuan",
     "~/Library/Application Support/SiYuan-Electron",
     "~/Library/Preferences/com.siyuan.unlock.plist",
     "~/Library/Saved Application State/com.siyuan.unlock.savedState"

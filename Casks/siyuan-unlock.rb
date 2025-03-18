@@ -13,7 +13,7 @@ cask "siyuan-unlock" do
 
   conflicts_with cask: "siyuan"
 
-  app "Siyuan.app"
+  app "Siyuan.app", target: "SiYuan Unlock.app"
 
   postflight do
     system_command "/usr/bin/xattr",

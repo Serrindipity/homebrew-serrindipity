@@ -11,6 +11,8 @@ cask "siyuan-unlock" do
 
   depends_on macos: ">= :catalina"
 
+  conflicts_with cask: "siyuan"
+
   app "Siyuan.app"
 
   postflight do

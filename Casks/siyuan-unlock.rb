@@ -9,6 +9,10 @@ cask "siyuan-unlock" do
   desc "SiYuan premium features unlocked"
   homepage "https://github.com/appdev/siyuan-unlock"
 
+  livecheck do
+    url "https://github.com/appdev/siyuan-unlock"
+  end
+
   depends_on macos: ">= :catalina"
 
   conflicts_with cask: "siyuan"

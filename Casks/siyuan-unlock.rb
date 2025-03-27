@@ -1,7 +1,7 @@
 cask "siyuan-unlock" do
   arch arm: "-arm64"
   
-  version :latest
+  version "3.1.26"
   sha256 :no_check
 
   url "https://github.com/appdev/siyuan-unlock/releases/download/v#{version}/siyuan-unlock-v#{version}-mac#{arch}.dmg"
@@ -11,7 +11,7 @@ cask "siyuan-unlock" do
 
   livecheck do
     url :url
-    regex(/^v?(\d+(?:\.\d+)+)$/i)
+    strategy :github_latest
   end
 
   depends_on macos: ">= :catalina"

@@ -11,7 +11,7 @@ cask "siyuan-unlock" do
 
   livecheck do
     url :url
-    regex(/^v?(\d+(?:\.\d+)+)$/i)
+    strategy :github_latest
   end
 
   depends_on macos: ">= :catalina"

@@ -10,7 +10,7 @@ cask "siyuan-unlock" do
   homepage "https://github.com/appdev/siyuan-unlock"
 
   livecheck do
-    url "https://github.com/appdev/siyuan-unlock"
+    url "https://github.com/appdev/siyuan-unlock/releases"
   end
 
   depends_on macos: ">= :catalina"

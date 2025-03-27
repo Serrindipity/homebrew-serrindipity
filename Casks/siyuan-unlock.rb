@@ -10,7 +10,8 @@ cask "siyuan-unlock" do
   homepage "https://github.com/appdev/siyuan-unlock"
 
   livecheck do
-    url "https://github.com/appdev/siyuan-unlock/releases"
+    url :url
+    regex(/^v?(\d+(?:\.\d+)+)$/i)
   end
 
   depends_on macos: ">= :catalina"

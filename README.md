@@ -1,2 +1,3 @@
-# homebrew-siyuan
-Tap for SiYuan Unlock
+# homebrew-serrindipity
+Contains:
+- SiYuan Unlock

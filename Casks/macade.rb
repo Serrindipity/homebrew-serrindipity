@@ -4,7 +4,7 @@ cask "macade" do
 
   url "https://github.com/Jayian1890/Macade/releases/download/v#{version}/Macade-#{version}-macOS.zip"
   name "Macade"
-  desc "Fightcade for macOS, rebuilt as a native Mac app"
+  desc "Native Fightcade client"
   homepage "https://github.com/Jayian1890/Macade"
 
   livecheck do
@@ -12,7 +12,7 @@ cask "macade" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :sequoia"
+  depends_on macos: :sequoia
 
   app "Macade.app"
 end

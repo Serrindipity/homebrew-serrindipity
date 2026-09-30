@@ -3,3 +3,4 @@ Contains:
 - SiYuan Unlock
 - Macade
 - qUnleashed
+- Gajim
